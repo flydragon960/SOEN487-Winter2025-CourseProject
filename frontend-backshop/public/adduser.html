@@ -20,40 +20,16 @@
         <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
             <div class="sidebar-sticky">
                 <ul class="nav flex-column">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Orders</a></li>
-                
+                    <li class="nav-item"><a class="nav-link active" href="#">User</a></li>
                     <li class="nav-item">
-                        <a class="nav-link" href="products.html" onclick="expandSubmenu(event)">
-                            Products
-                        </a>
-                        <ul class="nav flex-column collapse ml-3" id="productsSubmenu">
+                        <a class="nav-link" href="#">Product</a>
+                        <ul class="nav flex-column ml-3">
                             <li class="nav-item"><a class="nav-link" href="#">Collections</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Inventory</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Purchase Orders</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Transfers</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Gift Cards</a></li>
                         </ul>
                     </li>
-                
-                    <li class="nav-item"><a class="nav-link" href="#">Customers</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Content</a></li>
-                
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" href="#financeSubmenu" role="button" aria-expanded="false" aria-controls="financeSubmenu">
-                            Finance
-                        </a>
-                        <ul class="nav flex-column collapse ml-3" id="financeSubmenu">
-                            <li class="nav-item"><a class="nav-link" href="#">Plan Payment</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Payouts</a></li>
-                        </ul>
-                    </li>
-                
-                    <li class="nav-item"><a class="nav-link" href="#">Analytics</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Marketing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Discounts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Order</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Inventory</a></li>
                 </ul>
-                
             </div>
         </nav>
 
@@ -148,15 +124,7 @@
         </div>
     </footer>
 </div>
-<script>
-    function expandSubmenu(event) {
-        // Allow page navigation
-        const submenu = document.getElementById("productsSubmenu");
-        if (submenu && !submenu.classList.contains("show")) {
-            submenu.classList.add("show");
-        }
-    }
-    </script>
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.5/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
